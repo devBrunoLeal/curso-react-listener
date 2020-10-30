@@ -19,8 +19,5 @@ export class AppComponent {
 
       let link = location.href
 
-     if(!link.match('/videos/')){
-      console.log(this.videos.getLastVideo())
-      this.router.navigateByUrl('/videos/'+this.videos.getLastVideo());}}
 
 }
