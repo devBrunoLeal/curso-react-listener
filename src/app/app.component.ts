@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { VideosService } from './service/videos.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calendario-facul';
+
+  constructor(public router: Router, public videos: VideosService){
+
+  }
+
+
+  ngOnInit(){
+
+      let link = location.href
+
+     if(!link.match('/videos/')){
+      console.log(this.videos.getLastVideo())
+      this.router.navigateByUrl('/videos/'+this.videos.getLastVideo());}}
+
 }

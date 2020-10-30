@@ -1,0 +1,29 @@
+.selection-list{
+  background: #1C1C1C;
+  width: 300px;
+  margin-top: 40px;
+  overflow: scroll;
+  overflow-x: hidden !important;
+  height: 80%;
+}
+.option{
+  border-bottom: solid 0.5px #504c4c;
+}
+
+.mat-pseudo-checkbox::after {
+  color: red;
+}
+
+.mat-pseudo-checkbox {
+  background: lightblue;
+}
+
+.btn{
+  background: #69f0ae;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  color: rgb(82, 75, 75);
+  border:none;
+}

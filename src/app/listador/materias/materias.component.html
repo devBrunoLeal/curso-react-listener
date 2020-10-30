@@ -1,0 +1,11 @@
+<div class="info-menu" >
+  <p><strong>{{video.titulo}}</strong></p>
+  <p style="z-index: 1000; width: 300px; position: absolute; top: -10px; left: 580px;">Seu progresso</p>
+  <mat-progress-bar style="z-index: 1000; position: absolute; top: 26px; left: 700px;" mode="buffer" color="accent" bufferValue="1"  value={{progress}}></mat-progress-bar>
+</div>
+<div class="video" >
+  <video #videoo id="videoo" autoplay preload="auto" controls="ok" (ended)="vidEnded()" width="100%"  preload="preload" class="videoBlock"  ><source [src]="video.link" class="okok" type="video/mp4"></video>
+</div>
+
+
+

@@ -1,0 +1,15 @@
+<!-- <div class="video" *ngFor="let video of videos">
+ <video controls="ok"  >
+   <source src="{{video.link}}" class="okok" type="video/mp4">
+ </video>
+ {{video.link}}
+</div> -->
+<button class="btn btn-primary" (click)="resetar()"> Resetar aulas </button>
+<button class="btn btn-primary" (click)="backAula()"> Voltar uma aula </button>
+<mat-selection-list   class="selection-list">
+
+  <mat-list-option style="" [selected]="video.view" #option   (click)="cursoSelecionado(option.selected, video.id)" class="option" *ngFor="let video of videos" style="height: 70px;" [routerLink]="['/videos/', video.id]" >
+    <b style="font-size: 10px;">{{video.pastaRaiz}}</b><p style="">{{video.titulo}}         <span style="margin-left: 40px; color: #69f0ae; font-size: 12px;">{{"Duração "+video.duracao}}</span></p>
+  </mat-list-option>
+
+</mat-selection-list>

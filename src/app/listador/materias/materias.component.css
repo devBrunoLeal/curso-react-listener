@@ -1,0 +1,33 @@
+.example-card{
+  width: 300px;
+  margin:auto;
+}
+.video{
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  width: 75vw !important;
+}
+.videoBlock{
+  width: 75vw !important;
+}
+video{
+  width: 75vw !important;
+}
+.okok{
+  width: 65vw !important;
+}
+
+.info-menu{
+  background: #1C1C1C;
+  color: #69f0ae;
+  position: absolute;
+  top: 0;
+  height: 40px;
+  left: 300px;
+  width: 100%;
+}
+
+.info-menu p{
+  padding: 10px;
+}
