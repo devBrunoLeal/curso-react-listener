@@ -246,8 +246,10 @@ constructor(private http: HttpClient){
 
  getLastVideo(){
   this.localChecked = JSON.parse(window.localStorage.getItem('checked'));
-  if(this.localChecked != null){
+  if(this.localChecked !== null && this.localChecked !== undefined){
      return this.localChecked.id;
+  }else{
+    return 0;
   }
  }
 
