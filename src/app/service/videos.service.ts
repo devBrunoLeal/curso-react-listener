@@ -303,7 +303,7 @@ constructor(private http: HttpClient){
 
 
  makeArray(){
-    for(let i = 0;i <= 151; i++){
+    for(let i = 0;i <= 230; i++){
       this.videos.push({
         id: 0,
         view: false,
